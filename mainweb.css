@@ -1,0 +1,193 @@
+/* style.css */
+
+/* Reset default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #171c26;
+    color: #fff;
+}
+
+header {
+    background-color: #232931;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Apply the glowing effect to navigation buttons without a border */
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+nav a:hover {
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+    transform: scale(1.05);
+}
+
+
+main {
+    padding: 20px;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #a4b0be;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* About section */
+.about-content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #a4b0be;
+    margin: 20px 0;
+}
+/* Add this to your existing CSS or create a new CSS file */
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Update the CSS for the Previous and Next navigation icons */
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 74px;
+    cursor: pointer;
+    color: #000000;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    color: #ff6b6b; /* Change the color on hover */
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.7); /* Add a glowing effect on hover */
+}
+
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Image style */
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #232931;
+    color: #fff;
+    padding: 10px;
+}
+/* Add this to your existing CSS */
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.5);
+}
+
+.cta-button:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 107, 107, 0.5);
+    transform: scale(1.05);
+}
+
+/* Apply responsive styles for screens up to 768px wide (typical for iPhones) */
+@media screen and (max-width: 768px) {
+    /* Adjust the styles as needed for smaller screens */
+    body {
+        font-size: 16px; /* Adjust font size */
+    }
+ #contact{
+    position: relative;
+    top: 85px;
+ }
+    /* You can adjust other styles here to make the layout more mobile-friendly */
+}
